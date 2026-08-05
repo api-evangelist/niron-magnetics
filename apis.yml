@@ -1,7 +1,17 @@
 aid: niron-magnetics
 name: Niron Magnetics
-description: 'Niron Magnetics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Niron Magnetics is a U.S. advanced-manufacturing company commercializing
+  high-performance permanent magnets made from Iron Nitride rather than rare-earth
+  elements. Spun out of University of Minnesota and U.S. Department of Energy ARPA-E
+  research and founded in 2013, the company holds 150+ patents around its Clean Earth
+  Magnet technology and is building the first full-scale Iron Nitride magnet plant
+  in Sartell, Minnesota, alongside its Minneapolis headquarters and a Washington,
+  D.C. policy office. Its magnets target electric-motor, automotive, consumer-audio,
+  industrial and defense applications, with announced collaborations including Stellantis,
+  Moog, Aspina, FaitalPRO, MATTER and Bimotal. Niron Magnetics is a materials and
+  hardware manufacturer: it publishes no developer program, no public API, and no
+  machine-readable API contract.'
+image: https://nironmagnetics.com/wp-content/uploads/2026/04/NironHrzGrnLogoBlckType-1.svg
 url: https://raw.githubusercontent.com/api-evangelist/niron-magnetics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +22,14 @@ created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Manufacturing
+- Advanced Materials
+- Permanent Magnets
+- Rare Earth Alternatives
+- Electric Motors
+- Clean Energy
+- Industrial
+- Defense
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +38,57 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://nironmagnetics.com/
+- type: About
+  url: https://nironmagnetics.com/about/
+- type: Blog
+  url: https://nironmagnetics.com/news-press/
+- type: PressCoverage
+  url: https://nironmagnetics.com/press-coverage/
+- type: Contact
+  url: https://nironmagnetics.com/contact/
+- type: Careers
+  url: https://nironmagnetics.com/careers/
+- type: Leadership
+  url: https://nironmagnetics.com/leadership/
+- type: PrivacyPolicy
+  url: https://nironmagnetics.com/privacy-policy/
+- type: TermsOfService
+  url: https://nironmagnetics.com/terms/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/niron-magnetics-inc./
+- type: Twitter
+  url: https://x.com/NironMagnetics
+- type: YouTube
+  url: https://www.youtube.com/@nironmagnetics1012/videos/
+- type: LLMsTxt
+  url: llms/niron-magnetics-llms.txt
+- type: DomainSecurity
+  url: security/niron-magnetics-domain-security.yml
+- type: SecondaryMarket
   url: https://forgeglobal.com/niron-magnetics_stock/
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Niron Magnetics manufactures Iron Nitride permanent magnets; its entire web
+    presence is a WordPress marketing site whose only machine-readable endpoint is
+    the stock WordPress /wp-json/ core route (oembed, jetpack, rankmath, HubSpot leadin)
+    — there is no product API, no developer subdomain (api./developer./docs. all fail
+    to resolve), and no published contract.
+  evidence:
+  - url: https://nironmagnetics.com/llms.txt
+    status: 200
+  - url: https://nironmagnetics.com/openapi.json
+    status: 404
+  - url: https://nironmagnetics.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.nironmagnetics.com/
+    status: 0
+  - url: https://developer.nironmagnetics.com/
+    status: 0
+  checked: '2026-08-04'
