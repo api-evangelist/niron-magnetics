@@ -11,6 +11,17 @@ description: 'Niron Magnetics is a U.S. advanced-manufacturing company commercia
   Moog, Aspina, FaitalPRO, MATTER and Bimotal. Niron Magnetics is a materials and
   hardware manufacturer: it publishes no developer program, no public API, and no
   machine-readable API contract.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://nironmagnetics.com/wp-content/uploads/2026/04/NironHrzGrnLogoBlckType-1.svg
 url: https://raw.githubusercontent.com/api-evangelist/niron-magnetics/refs/heads/main/apis.yml
 x-type: company
